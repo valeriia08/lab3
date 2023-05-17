@@ -11,15 +11,16 @@ scanf("%lf %lf", &a,&b);
 printf("Введіть число c:");
 scanf("%d", &c);
 
-if (c>0){
+if (c>0 && a<=b)
     y = sqrt(b - a) + 2 * sqrt(c);
-}else if (c==0){
-    y = b / c - 6 * a;
-}else {
+if (c==0 && (c - 6 * a)!=0)
+    y = b / (c - 6 * a);
+if (c<0) 
     y = b + 12 * pow(c, 3);
-}
-printf("y=%lf", y);
+
+printf("y=%.2lf", y);
 
 return 0;
 
 }
+
