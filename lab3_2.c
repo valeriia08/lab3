@@ -15,9 +15,9 @@ int main() {
     sum=thousands+hundreds+tens+ones;
 
     if (sum<25) {
-        printf("Сума цифир менше 25:");
+        printf("Сума цифир менше 25");
     }else {
-        printf("Сума цифир менша або дорівнює 25");
+        printf("Сума цифир більше або дорівнює 25");
     }
     
     return 0;
